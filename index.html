@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On To Go Ticket Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay>
+        <source src="onlymp3.to - Coldplay Sparks-Ar48yzjn1PE-192k-1694598056.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+       
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Cinemas</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="inputs-container">
+            <h2>On To Go Ticket Shop</h2>
+            <div class="input-fields">
+                <form action="ordersummary.php" method="post">
+                    <input type="text" placeholder="Customer Name" id="input-name" name="cname">
+                    <input type="text" placeholder="Gender" id="input-gender" name="gender"> 
+                    <input type="text" placeholder="Age" id="input-age" name="age">
+                    <input type="text" placeholder="Address" id="input-address" name="address">
+                    <select name="cinema" id="cinema">
+                        <option value="cinema1">Cinema 1</option>
+                        <option value="cinema2">Cinema 2</option>
+                        <option value="cinema3">Cinema 3</option>
+                        <option value="cinema4">Cinema 4</option>
+                    </select>
+                    <input type="Number" placeholder="Number of ticket to purchase" id="tickets" name="tickets">
+                    <select name="addOns" id="addOns">
+                        <option value="popcorn">Popcorn</option>
+                        <option value="drink">Drink</option>
+                        <option value="burger">Burger</option>
+                    </select>
+                    <div class="button-container">
+                        <button id="submit-btn"><i class="bi bi-send-check"></i> Submit</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>All Right Reserved 2023 | On to Go Ticket Shop</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-rendering: optimizeSpeed;
+    box-sizing: border-box;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* preventing overlapse */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+nav {
+    background-color: rgb(133, 163, 255);
+    height: 3rem;
+   
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(219, 228, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+footer {
+    background-color: black;
+    height: 1rem;
+    padding: 1rem;
+}
+
+footer > h3 {
+    color: white;
+    text-align: center;
+}
+
+
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 420px;
+    height: 400px;
+    padding: 3rem 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(18, 16, 34, 0.541);
+    animation : 1s fadeEffect ease-in-out;
+}
+
+.inputs-container > h2 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+    
+}
+
+li {
+    margin-right: 20px; 
+}
+
+form {
+    width: 100%;
+}
+
+form > input{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* .bday-cont > label, .bday-cont > input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: auto;
+    margin-bottom: 30px;
+} */
+
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(90, 88, 88);
+    letter-spacing: 1px;
+}
+
+
+.button-container > #submit-btn{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(100, 150, 241);
+    color: white;
+    margin-bottom: 15px;
+    padding: 7px 15px 7px 15px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(34, 34, 34, 0.205);
+    cursor: pointer;
+}
+
+#clear-btn {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(241, 100, 100);
+    color: white;
+    padding: 7px 15px 7px 15px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(34, 34, 34, 0.205);
+    cursor: pointer;
+}
+
+
+@keyframes fadeEffect {
+     
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
